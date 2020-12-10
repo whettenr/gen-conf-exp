@@ -11,5 +11,5 @@ As of now this repository focuses on classifying between authors using sklearn's
 
 ## Conclusions
 
-## Conclusions
+## Further Exploration
 
