@@ -150,7 +150,7 @@ Since I have a love for languages, I also thought about the translations of thes
 
 #### Wanna mess around with it yourself?
 Download/Clone repository
-Make sure you have all the needed packages installed. (If not a simple pip install *package-name* should do the trick)
+Make sure you have all the needed packages installed. (If not, a simple pip install *package-name* should do the trick)
 
 Probably the main area of interest would be into looking into different authors. To to that find the line of code below and try replacing the names for other people. For example:
 `talks = gc_data[gc_data.author.str.contains('Nelson|Monson|Hinckley|Benson', regex=True)]`
