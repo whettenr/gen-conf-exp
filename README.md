@@ -16,7 +16,7 @@ How are unique are the prophets and apostles?
 
 ## Data
 The data used in this project comes from [the church's website](https://www.churchofjesuschrist.org/general-conference/conferences?lang=eng) 
-The functions used in order to get this data can be found in the file titled *get_data*. A summary of the functions in this file can be found below.
+The functions used in order to get this data can be found in the file titled ***get_data***. A summary of the functions in this file can be found below.
 
 `def get_author_body(url):`
 - input: url of specific discourse
@@ -50,7 +50,7 @@ The *cd_all_2020_data.csv* contains 4593 talks
 
 *ClassifierMultiplePeoplePast10Year*
 
-The methods in these three files all follow the same pattern. 
+**The methods in these three files all follow the same pattern.** 
 - The date is imported from the dots CSV files
 - A subsection of the data is chosen (based off of authors of interest)
 - The transcripts are prepared/cleaned (vectorized and lematized)
@@ -66,7 +66,8 @@ The methods in these three files all follow the same pattern.
 - Import christmas devotional from *nelson_christmas.csv*
 - Prepare transcript (vectorize and lematize version) I name this `nelson_christmas_vector`.
 - Get model to predict author. (It should predict Nelson)
-*end extra steps*
+
+
 - Repeat with other classifier
 
 ### Results
@@ -81,15 +82,15 @@ The Naive Bayes classifier for multinomial models performed the best in the sect
 [ 1, 11]
 
 ###### Naive Bayes classifier
--  accuracy score: 0.96
+- accuracy score: 0.96
 - f1_score: 0.96
 
-###### Random Forest classifier (with `'max_depth': 100, 'n_estimators': 500`)
--  accuracy score: 0.92
+###### Random Forest classifier (with `'max_depth': 100, 'n_estimators': 250`)
+- accuracy score: 0.92
 - f1_score: 0.90
 
-###### Adaboost classifier (with `'learning_rate': 1, 'n_estimators': 500`)
--  accuracy score: 0.92
+###### Adaboost classifier (with `'learning_rate': .5, 'n_estimators': 700`)
+- accuracy score: 0.92
 - f1_score: 0.92
 (I experimented a bit with the learning rate and number of estimators. If you have a lot of estimators or lower the learning rate a bit the performance becomes as good as the MultinomialNB model.)
 
@@ -132,7 +133,7 @@ To answer the original question, overall, the speakers at General Conference are
 
 
 ## Further Exploration
-Do you have time limitations I did not get to incorporate many of the things that I wanted to. Here were some of my other ideas:
+Due to time limitations I did not get to incorporate many of the things that I wanted to. Here were some of my other ideas:
 
 Would adding a sentiment feature or a talk length feature improve performance?
 
@@ -144,7 +145,7 @@ Would using a neural network perform better than the models I used?
 
 Could we do some type of clustering analysis to see how topics have changed over the general conference is from April 1971 to Oct. 2020? (for example President Hinckley focused on food storage more than some others)
 
-Since I have a love for languages I also thought about the translations. The majority of these talks have very accurate professional translations in other languages. How would the sentiment of the English version compared to the Spanish, Japanese, Portuguese, .. versions. We couldn't necessarily do an analysis of the accuracy of the sentiment analyzer that we use, but we could see how precise they are by comparing one to another. So ... Using common sentiment analyzers of other languages, maybe [Portuguese]("https://link.springer.com/article/10.1007/s10462-020-09870-1"), how does it compare to english? For languages that don't have very precise sentiment analyzers could we use these translations to develop better ones?
+Since I have a love for languages, I also thought about the translations of these talks. The majority of these talks have very accurate professional translations in other languages. How would the sentiment of the English version compared to the Spanish, Japanese, Portuguese, .. versions. We couldn't necessarily do an analysis of the accuracy of the sentiment analyzer that we use, but we could see how precise they are by comparing one to another. So ... Using common sentiment analyzers of other languages, maybe [Portuguese]("https://link.springer.com/article/10.1007/s10462-020-09870-1"), how does it compare to english? For languages that don't have very precise sentiment analyzers could we use these translations to develop better ones?
 
 
 #### Wanna mess around with it yourself?
@@ -157,5 +158,5 @@ Probably the main area of interest would be into looking into different authors.
 Could be changed to:
 `talks = gc_data[gc_data.author.str.contains('R. Holland|Uchtdorf|Bednar', regex=True)]`
 
-Look out for authors who have the same last name. For example you might need to include a middle initial such at `R. Holland` instead of just `Holland`.
+Note: Look out for authors who have the same last name. For example you might need to include a middle initial such at `R. Holland` instead of just `Holland`.
 
