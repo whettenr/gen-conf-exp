@@ -44,8 +44,10 @@ The *cd_all_2020_data.csv* contains 4593 talks
 
 
 ## Methods & Results
-The methods and results can be found mainly in the following 3 files.
+**The methods and results can be found mainly in the following 2 files.**
+
 *NelsonMonsonClassifier*
+
 *ClassifierMultiplePeoplePast10Year*
 
 The methods in these three files all follow the same pattern. 
