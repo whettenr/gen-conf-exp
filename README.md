@@ -139,9 +139,9 @@ Would adding a sentiment feature or a talk length feature improve performance?
 
 Would analyzing the reference in the talks the number of them and the source add any useful information? (for example maybe one author sites the old testament a lot more frequently and another author cites the book of Mormon more frequently)
 
-Could we look at just a functional data analysis of the sentiment across the speeches? This is a lot more complicated of an idea but the idea is to have a sentiment function for each talk that would be based off of possibly the sentiment values of each sentence or paragraph. Using functional data analysis we could possibly classify authors solely based off of the way the sentiment changes throughout the talk. 
+Could we look at just a functional data analysis of the sentiment across the speeches? This is a lot more complicated of an idea but the idea is to have a sentiment function for each talk that would be based off of possibly the sentiment values of each sentence or paragraph. Using functional data analysis we could possibly classify authors solely based off of the way the sentiment changes throughout the talk. (A possible limitation of this would be that functional data analysis is best done when the functions are of the same domain. I've already started working on a solution for this and it is in the file called *SentMultiplePeoplePast10Years*)
 
-Would using a neural network perform better than the models I used?
+Would using a neural network perform better than the models I used? (Ive already starting working on this in the file callled *ClassifierNN*, but did not make it very far.)
 
 Could we do some type of clustering analysis to see how topics have changed over the general conference is from April 1971 to Oct. 2020? (for example President Hinckley focused on food storage more than some others)
 
@@ -159,4 +159,6 @@ Could be changed to:
 `talks = gc_data[gc_data.author.str.contains('R. Holland|Uchtdorf|Bednar', regex=True)]`
 
 Note: Look out for authors who have the same last name. For example you might need to include a middle initial such at `R. Holland` instead of just `Holland`.
+
+Note: The code for generating the word cloud graphics at the top of this document can be found at the bottom of the NelsonMonsonClassifier.
 
