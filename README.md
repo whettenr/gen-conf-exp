@@ -73,6 +73,7 @@ The methods in these three files all follow the same pattern.
 The Naive Bayes classifier for multinomial models performed the best in the section. I used talks from President Nelson and Monson and the last 10 years. All of the models predicted the Christmas devotional by President Nelson correctly. I also tried all of these lemmatizing the the talks, but it only resulted in minimal changes in performance. 
 
 - confusion matrix of best model (Naive Bayes classifier) on test set
+
 [13,  0]
 [ 1, 11]
 
@@ -94,7 +95,9 @@ This part tries to build a model that can identify between Nelson, Monson, Uchtd
 
 - confusion matrix of best model (Random Forest classifier) on test set
 
+
 ['Bednar' 'Holland' 'Monson' 'Nelson' 'Uchtdorf']
+
 [ 5,  0,  0,  1,  0],
 [ 0,  3,  1,  0,  2],
 [ 0,  0, 12,  0,  1],
