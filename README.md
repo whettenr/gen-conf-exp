@@ -30,7 +30,7 @@ The functions used in order to get this data can be found in the file titled ***
 input: designed to take in [this url](https://www.churchofjesuschrist.org/general-conference/conferences?lang=eng)  
 output: returns list of links to all the general conferences (these links can then be used in the function `def get_talk_urls_from_conf(url):`)
 
-`christmas_nelson_url` = [link to chritmas devotional given by President Russel M. Nelson]("https://www.churchofjesuschrist.org/broadcasts/article/christmas-devotional/2018/12/four-gifts-that-jesus-christ-offers-to-you?lang=eng")
+`christmas_nelson_url` = [link to chritmas devotional given by President Russel M. Nelson](https://www.churchofjesuschrist.org/broadcasts/article/christmas-devotional/2018/12/four-gifts-that-jesus-christ-offers-to-you?lang=eng)
 This is not a function, but I wanted to get a talk by one of the speakers at general conference to see if the classifiers could predict the author on a non-general conference talk. I did a bit of manually cleaning up to remove the references at the bottom of the talk. For convenience, the cleaned data for this talk can be found in the file *nelson_christmas.csv*
 
 Also for convenience and future use, I exported the data into cvs files. *cd_2011_2020_data.csv* contains all the conference talks that had transcripts for the past 10 years (2011 to 2020). *cd_all_2020_data.csv* contains all the conferences that could currently be found on the site (1971 to 2020). These can be easily imported into an R program or a Python program as a data frame with the columns being author, date, text/transcript.
@@ -145,7 +145,7 @@ Would using a neural network perform better than the models I used? (Ive already
 
 Could we do some type of clustering analysis to see how topics have changed over the general conference is from April 1971 to Oct. 2020? (for example President Hinckley focused on food storage more than some others)
 
-Since I have a love for languages, I also thought about the translations of these talks. The majority of these talks have very accurate professional translations in other languages. How would the sentiment of the English version compared to the Spanish, Japanese, Portuguese, .. versions. We couldn't necessarily do an analysis of the accuracy of the sentiment analyzer that we use, but we could see how precise they are by comparing one to another. So ... Using common sentiment analyzers of other languages, maybe [Portuguese]("https://link.springer.com/article/10.1007/s10462-020-09870-1"), how does it compare to english? For languages that don't have very precise sentiment analyzers could we use these translations to develop better ones?
+Since I have a love for languages, I also thought about the translations of these talks. The majority of these talks have very accurate professional translations in other languages. How would the sentiment of the English version compared to the Spanish, Japanese, Portuguese, .. versions. We couldn't necessarily do an analysis of the accuracy of the sentiment analyzer that we use, but we could see how precise they are by comparing one to another. So ... Using common sentiment analyzers of other languages, maybe [Portuguese](https://link.springer.com/article/10.1007/s10462-020-09870-1), how does it compare to english? For languages that don't have very precise sentiment analyzers could we use these translations to develop better ones?
 
 
 #### Wanna mess around with it yourself?
