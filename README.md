@@ -126,7 +126,7 @@ This part tries to build a model that can identify between Nelson, Monson, Uchtd
 - With classifying between multiple authors the Random Forest classifier and  Adaboost classifier performed much better than the multinomial classifier. There was not a clear better model between the Random Forest and Adaboost classifiers. Depending on the parameters chosen, the random state, and authors chosen, the one would preform better than the other.
 - All of the models performed fairly well, but they all showed the trend that when trying to classify between multiple authors performance decreased.
 
-To answer the original question, overall, the speakers at General Conference are unique enough to be able to classify fairly well between them. The performance of the classification depends on the speakers, the number of speakers, and the model. I was very impressed to see that these classifiers could also predict the author of a talk that did not come from general conference. This shows that there is possibly an underlying unique style of writing or word a choice between the leaders of the church of Jesus Christ of latter-day Saints.
+To answer the original question, overall, the speakers at General Conference are unique enough to be able to classify fairly well between them. The performance of the classification depends on the speakers, the number of speakers, and the model. I was very impressed to see that these classifiers could also predict the author of a talk that did not come from general conference. This shows that there is possibly an underlying unique style of writing or word a choice between the leaders of the church of Jesus Christ of latter-day Saints.
 
 
 ## Further Exploration
