@@ -75,6 +75,7 @@ The Naive Bayes classifier for multinomial models performed the best in the sect
 - confusion matrix of best model (Naive Bayes classifier) on test set
 
 [13,  0]
+
 [ 1, 11]
 
 ###### Naive Bayes classifier
@@ -96,13 +97,19 @@ This part tries to build a model that can identify between Nelson, Monson, Uchtd
 - confusion matrix of best model (Random Forest classifier) on test set
 
 
+
 ['Bednar' 'Holland' 'Monson' 'Nelson' 'Uchtdorf']
 
-[ 5,  0,  0,  1,  0],
-[ 0,  3,  1,  0,  2],
-[ 0,  0, 12,  0,  1],
-[ 0,  0,  2,  8,  2],
+[ 5,  0,  0,  1,  0]
+
+[ 0,  3,  1,  0,  2]
+
+[ 0,  0, 12,  0,  1]
+
+[ 0,  0,  2,  8,  2]
+
 [ 0,  0,  0,  0, 14]
+
 
 ###### Naive Bayes classifier
 -  accuracy score: 0.549
