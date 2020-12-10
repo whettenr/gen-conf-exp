@@ -3,8 +3,10 @@ Final Project for STAT 426. This project includes obtaining General Conference d
 
 As of now this repository focuses on classifying between authors using sklearn's Naive Bayes classifier for multinomial models (MultinomialNB), Random Forest Classifier (RandomForestClassifier), and AdaBoost classifier (AdaBoostClassifier). In the future this might include more *see section titled **Further Exploration** at the end of this document*.
 
-
+President Nelson Word Cloud
 ![Nelson Word Cloud](nelson_wordcloud.png)
+
+President Monson Word Cloud
 ![Monson Word Cloud](monson_wordcloud.png)
 
 ## Introduction
