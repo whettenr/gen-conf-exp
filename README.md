@@ -1,7 +1,7 @@
 # gen-conf-exp
-Final Project for STAT 426. This project includes obtaining General Conference discourses from the Church of Jesus Christ of Latter Day Saint website and uses modern statistical methods to analyze text.  
+Final Project for STAT 426. This project includes obtaining General Conference discourses from the Church of Jesus Christ of Latter Day Saint's website and using modern statistical methods to look into the these discourses.  
 
-As of now this repository focuses on classifying between authors using sklearn's Naive Bayes classifier for multinomial models (MultinomialNB), Random Forest Classifier (RandomForestClassifier), and AdaBoost classifier (AdaBoostClassifier). In the future this might include more *see section titled **Further Exploration** at the end of this document*.
+As of now this repository focuses on classifying between authors using sklearn's Naive Bayes classifier for multinomial models (MultinomialNB), Random Forest Classifier (RandomForestClassifier), and AdaBoost classifier (AdaBoostClassifier). In the future this might include more. *see section titled **Further Exploration** at the end of this document*.
 
 President Nelson Word Cloud
 ![Nelson Word Cloud](nelson_wordcloud.png)
